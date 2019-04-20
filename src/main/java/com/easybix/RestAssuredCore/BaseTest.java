@@ -25,6 +25,7 @@ public class BaseTest {
 		String sessionID = jsonRes.getString("session.value");
 		log.info("JIRA JSession ID : " + sessionID);
 		return sessionID;
+		//edit
 	}
 
 }
