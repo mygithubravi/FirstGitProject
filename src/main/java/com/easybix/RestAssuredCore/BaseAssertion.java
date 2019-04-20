@@ -2,11 +2,10 @@ package com.easybix.RestAssuredCore;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.jsoup.Connection.Response;
 import org.testng.Assert;
 
 import com.easybix.utils.TestUtils;
-
-import io.restassured.response.Response;
 
 public class BaseAssertion {
 	private static Logger log = LogManager.getLogger(TestUtils.class.getName());

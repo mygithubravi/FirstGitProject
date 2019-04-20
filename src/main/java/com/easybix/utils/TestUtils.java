@@ -33,16 +33,16 @@ public class TestUtils {
 		return xmlResponse;
 	}
 	
-	public static int getStatusCode(Response response){
+	public static int getStatusCode(org.jsoup.Connection.Response response){
 		log.info("Getting Response Code");
-		int statusCode = response.getStatusCode();
+		int statusCode = response.statusCode();
 		log.info(statusCode);
 		return statusCode;
 	}
 	
 	public static String getStatusMessage(Response response){
 		log.info("Getting Response Message");
-		String responseMessage = response.getStatusLine();
+		String responseMessage = response.getStatusCode();
 		log.info(responseMessage);
 		return responseMessage;
 	}
