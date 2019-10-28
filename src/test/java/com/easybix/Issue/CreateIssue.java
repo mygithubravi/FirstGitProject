@@ -31,6 +31,15 @@ public class CreateIssue {
 		String createIssuePayLaod = PayloadGenerator.generatePayLoadString("CreateBug.json");
 		response = RESTCalls.POSTRequest(URI, createIssuePayLaod, sessionID);
 		BaseAssertion.verifyStatusCode(response, 201);
+		
+	@Test
+	//ravi
+	public void createIssue() {
+		log.info("Starting Create Issue Test");
+		String URI = URL.getEndPoint("/rest/api/2/issue/");
+		String createIssuePayLaod = PayloadGenerator.generatePayLoadString("CreateBug.json");
+		response = RESTCalls.POSTRequest(URI, createIssuePayLaod, sessionID);
+		BaseAssertion.verifyStatusCode(response, 201);
 
 	}
 
